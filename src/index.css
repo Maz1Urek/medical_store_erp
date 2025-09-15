@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cart and notification slide-up animation */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Login title bounce */
+@keyframes bounceTitle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounceTitle 1.5s infinite;
+}
+
+:root {
+  --main-bg-color: #f5f5f5;
+  --primary-color: #1e40af;
+  --secondary-color: #059669;
+  --font-family-base: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
