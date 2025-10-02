@@ -1,12 +1,49 @@
-# React + Vite
+#A web-based Pharmacy Management System built with React + Vite + Tailwind CSS.
+This project helps customers browse medicines and place orders, while admins can manage stock and view reports.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚙️ Environment Setup
 
-Currently, two official plugins are available:
+Before running this project, make sure you have the following installed on your system:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Node.js (v18 or later recommended) → Download here
 
-## Expanding the ESLint configuration
+2. npm (comes with Node.js) or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. A code editor like VS Code
+
+4. it (optional, for version control)
+
+📥 How to Install Dependencies
+
+1. Clone the repository (or download ZIP):
+
+git clone https://github.com/your-username/Medical-Store-ERP.git
+cd Medical-Store-ERP
+
+
+2. Install required dependencies:
+
+npm install
+
+
+This will install React, Vite, Tailwind CSS, and other required libraries.
+
+▶️ How to Run the Project
+
+1. Start the development server:
+
+npm run dev
+2. Open the given link in your browser (default: http://localhost:5173/) to view the website.
+
+
+##Project Structure
+Medical-Store-ERP/
+├── public/                  # Public assets (logos, static images)
+├── src/
+│   ├── components/          # Navbar, LoginForm, MedicineCard, Dashboard
+│   ├── pages/               # Home, Login, Admin, Shop
+│   ├── App.jsx              # Main React component with routes
+│   ├── index.css            # Global styles + Tailwind directives
+│   └── main.jsx             # Entry point
+├── package.json             # Dependencies & scripts
+└── README.md                # Project documentation
